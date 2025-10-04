@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./assest/css/main.css" />
+    <link rel="stylesheet" href="./assest/css/style.css" />
+
+    <!-- Bootstrap Icons -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+
+    <nav class="navbar navbar-expand-lg bg-white position-sticky top-0">
+      <div class="container d-flex justify-content-between align-items-center">
+        <!-- logo -->
+        <a class="navbar-brand fw-bold" href="#">Barly</a>
+
+        <!-- menu middle -->
+        <div
+          class="collapse navbar-collapse justify-content-center"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav gap-4">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Home</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">Shop</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Page</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- icons right -->
+        <div class="d-flex align-items-center gap-3">
+          <a href="#"><i class="bi bi-person"></i></a>
+          <a href="#"><i class="bi bi-search"></i></a>
+          <a href="#" class="position-relative">
+            <i class="bi bi-cart"></i>
+            <span
+              class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-dark"
+            >
+              03
+            </span>
+          </a>
+        </div>
+
+        <!-- toggle btn (for mobile) -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span
+            class="navbar-toggler-icon"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#barlycanvas"
+            aria-controls="staticBackdrop"
+          ></span>
+        </button>
+      </div>
+    </nav>
+
+    <div
+      class="offcanvas offcanvas-start"
+      data-bs-backdrop="static"
+      tabindex="-1"
+      id="barlycanvas"
+      aria-labelledby="staticBackdropLabel"
+    >
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="staticBackdropLabel">Offcanvas</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <div>I will not close if you click outside of me. لافلببتالبتا</div>
+      </div>
+    </div>
+
+    <div class="hero primary">
+      <div class="container">
+        <div class="row">
+          <div
+            class="col-xxl-6 col-xl-6 col-lg-6 col-sm-12 d-flex flex-column gap-hero padding justify-content-center"
+          >
+            <div class="hero-content d-flex flex-column gap-3">
+              <h4 class="sub-title">Up to 45%</h4>
+              <h2 class="main-title">Enjoy your Shopping</h2>
+              <a class="slider" href="#"
+                >Shop Now
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-arrow-right"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"
+                  />
+                </svg>
+              </a>
+            </div>
+
+            <div class="hero-icon d-flex gap-2">
+              <a href="#" class="face-icon col-2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="40"
+                  height="40"
+                  viewBox="0 0 24 24"
+                  fill="#8c8c8c"
+                  class="icon icon-tabler icons-tabler-filled icon-tabler-brand-facebook"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path
+                    d="M18 2a1 1 0 0 1 .993 .883l.007 .117v4a1 1 0 0 1 -.883 .993l-.117 .007h-3v1h3a1 1 0 0 1 .991 1.131l-.02 .112l-1 4a1 1 0 0 1 -.858 .75l-.113 .007h-2v6a1 1 0 0 1 -.883 .993l-.117 .007h-4a1 1 0 0 1 -.993 -.883l-.007 -.117v-6h-2a1 1 0 0 1 -.993 -.883l-.007 -.117v-4a1 1 0 0 1 .883 -.993l.117 -.007h2v-1a6 6 0 0 1 5.775 -5.996l.225 -.004h3z"
+                  />
+                </svg>
+              </a>
+
+              <a href="#" class="face-icon col-2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="40"
+                  height="40"
+                  viewBox="0 0 24 24"
+                  fill="#8c8c8c"
+                  class="icon icon-tabler icons-tabler-filled icon-tabler-brand-twitter"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path
+                    d="M14.058 3.41c-1.807 .767 -2.995 2.453 -3.056 4.38l-.002 .182l-.243 -.023c-2.392 -.269 -4.498 -1.512 -5.944 -3.531a1 1 0 0 0 -1.685 .092l-.097 .186l-.049 .099c-.719 1.485 -1.19 3.29 -1.017 5.203l.03 .273c.283 2.263 1.5 4.215 3.779 5.679l.173 .107l-.081 .043c-1.315 .663 -2.518 .952 -3.827 .9c-1.056 -.04 -1.446 1.372 -.518 1.878c3.598 1.961 7.461 2.566 10.792 1.6c4.06 -1.18 7.152 -4.223 8.335 -8.433l.127 -.495c.238 -.993 .372 -2.006 .401 -3.024l.003 -.332l.393 -.779l.44 -.862l.214 -.434l.118 -.247c.265 -.565 .456 -1.033 .574 -1.43l.014 -.056l.008 -.018c.22 -.593 -.166 -1.358 -.941 -1.358l-.122 .007a.997 .997 0 0 0 -.231 .057l-.086 .038a7.46 7.46 0 0 1 -.88 .36l-.356 .115l-.271 .08l-.772 .214c-1.336 -1.118 -3.144 -1.254 -5.012 -.554l-.211 .084z"
+                  />
+                </svg>
+              </a>
+
+              <a href="#" class="face-icon col-2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="40"
+                  height="40"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#8c8c8c"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-instagram"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path
+                    d="M4 8a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z"
+                  />
+                  <path d="M9 12a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
+                  <path d="M16.5 7.5v.01" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="col-xxl-6 col-xl-6 col-lg-6 col-sm-12">
+            <div class="hero-img col-sm-6">
+              <img src="./assest/img/hero/slider-image-01.webp" alt="slider" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="brands">
+      <div class="container">
+        <div class="row">
+          <div class="logo col-2">
+            <img src="./assest/img/brands/brand-01.webp" />
+          </div>
+          <div class="logo col-2">
+            <img src="./assest/img/brands/brand-02.webp" />
+          </div>
+          <div class="logo col-2">
+            <img src="./assest/img/brands/brand-03.webp" />
+          </div>
+          <div class="logo col-2">
+            <img src="./assest/img/brands/brand-04.webp" />
+          </div>
+          <div class="logo col-2">
+            <img src="./assest/img/brands/brand-05.webp" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="Blog-Post">
+      <div class="container">
+        <div class="row">
+          <div class="card" style="width: 18rem">
+            <img
+              src="./assest/img/blog/blog-01.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body d-flex flex-column">
+              <div class="content-card">
+                <a href="#"></a>Women</a>
+              <span>/14 October, 2020</span>
+              </div>
+              
+              <a href="#"
+                >Hot Summer Fashion for Women new collections arrives</a
+              >
+              <a href="#">Read more</a>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem">
+            <img
+              src="./assest/img/blog/blog-02.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body d-flex flex-column">
+              <div class="content-card">
+                <a href="#"></a>Fashoin</a>
+              <span>/14 October, 2020</span>
+              </div>
+              
+              <a href="#"
+                >Hot Summer Fashion for Women new collections arrives</a
+              >
+              <a href="#">Read more</a>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem">
+            <img
+              src="./assest/img/blog/blog-03.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body d-flex flex-column">
+              <div class="content-card">
+                <a href="#"></a>Man</a>
+              <span>/14 October, 2020</span>
+              </div>
+              <a class="dd" href="#">Hot Summer Fashion for Women new collections arrives</a>
+              <a href="#">Read more</a>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+    <section class="newsletter">
+      <div class="container">
+        <div class="news  d-flex gap-4 align-items-center justify-content-center">
+          <h1>Subscribe our Newsletter</h1>
+        <form>
+  <input type="text" placeholder="enter your email">
+  <button >
+    send 
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-arrow-right"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"
+                  />
+                </svg>
+  </button>
+  
+              
+</form>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="hot-winner">
+      <div class="container">
+        <div class="row ">
+          <div class=" col-5">
+            <div class="img1  row">
+              <div class="col-6 ">
+
+            </div>
+            <div class="col-6 d-flex flex-column justify-content-center">
+               <h4 class="">Up to 45%</h4>
+              <h2 class=" ">Enjoy your Shopping</h2>
+              <span>Product Code 5487</span>
+              <a class="" href="#"
+                >Shop Now
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-arrow-right"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"
+                  />
+                </svg>
+              </a>
+            </div>
+
+            </div>
+            
+           
+          </div>
+          <div class="col-1"></div>
+           <div class=" col-6 img2 ">
+            
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <section class="">
+      <div class="container">
+        <div class="row">
+          <div class="col-5">
+            <div class="hot-img">
+              قفلقيلقبل
+
+            </div>
+          </div>
+          <div class="col-1"></div>
+          <div class="col-5">
+            <div class="winner-ing">
+              fgfgf
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
