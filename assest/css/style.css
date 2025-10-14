@@ -28,11 +28,10 @@ justify-content: space-between;
 fill: black;
 }
 
-@media screen and (max-width: 1300px) {
-  img{
-    
-    
-  }
+@media screen and (max-width: px) {
+ .hero-img img {
+  width: 100%;
+}
 }
 
 /* start brands */
@@ -71,6 +70,9 @@ outline: none;
 border-radius: 0px;
  
 }
+.color-orange{
+   color: #CA7101;
+}
 .Blog-Post img{
     border-radius: 0%;
 }
@@ -85,12 +87,13 @@ border-radius: 0px;
 .Blog-Post .card a{
     transition: all 0.6s;
 }
-.content-card{
+.Blog-Post .content-card{
     color: #CA7101;
 }
 
 /* end Blog-Post */
 
+/* start news */
 .news{
     background-image: url(./../img/newsletter.jpg);
     height: 250px;
@@ -100,7 +103,7 @@ border-radius: 0px;
     background-size: 100% ;
 }
 .news h1 {
-     flex: 1 0 40%;
+    flex: 1 0 40%;
 }
 .news form {
      flex: 1 0 50%;
@@ -117,29 +120,93 @@ input,button{
    outline: #CA7101;
 }
 
+/* end news */
 
-.img1,.hot-img{
+/* start hot */
+.hot-winner{
+  padding: 50px 0;
+}
+
+
+.img1{
   background-image: url(./../img/banner-7.jpg);
   margin-top: 35px;
     background-repeat: no-repeat;
     width: 100%;
-    
-  
-}
-.hot-img{
-  background-image: url(./../img/banner-7.jpg);
-  margin-top: 35px;
-    background-repeat: no-repeat;
-
-  
-}
-.gg{
-  margin: 30px;
 }
 .img2{
   background-image: url(./../img/banner-8.webp);
-  margin-right: 20px;
   background-repeat: no-repeat;
-  
+  width: 100%;
+}
+.hot-content{
+  padding: 70px 0;
+}
+.left-hot-content {
+  padding: 90px 0;
 }
 
+/* end hot */
+
+/* start Editor’s-Pick*/
+.Editor’s-Pick {
+    padding: 50px 0;
+    
+}
+.Editor’s-Pick .card{
+    padding: 0;
+     flex-grow: 1;
+  flex-basis: 300px;
+  flex-shrink: 0;
+ 
+;
+border: none;
+outline: none;
+border-radius: 0px;
+ 
+}
+.Editor’s-Pick .card .card-body{
+display: flex;}
+
+.Editor’s-Pick img{
+    border-radius: 0%;
+}
+.Editor’s-Pick .row{
+ display: flex;
+ gap: 30px;
+}
+.right-editor{
+  flex:1 0 80%;
+}
+.left-editor{
+  flex:1 0 20%;
+}
+.line-through{
+  text-decoration: line-through;
+}
+.Editor’s-Pick .card a:hover  {
+   color: #CA7101; 
+   
+}
+.Editor’s-Pick .card a{
+    transition: all 0.6s;
+}
+.Editor’s-Pick svg:hover path{
+fill: #CA7101 ;
+}
+Editor’s-Pick svg{
+  transition: all 0.6s;
+}
+
+
+/* end Editor’s-Pick*/
+
+.banner{
+  padding: 50px 0;
+}
+.padding-top-25{
+  padding-top: 25px;
+}
+.padding-left-25{
+  padding-left: 25px;
+}
