@@ -122,28 +122,23 @@ input,button{
   background-image: url(./../img/banner-7.jpg);
   margin-top: 35px;
     background-repeat: no-repeat;
+    width: 100%;
     
-  
- 
- 
   
 }
 .hot-img{
   background-image: url(./../img/banner-7.jpg);
   margin-top: 35px;
     background-repeat: no-repeat;
-     
+
   
- 
- 
-  
+}
+.gg{
+  margin: 30px;
 }
 .img2{
   background-image: url(./../img/banner-8.webp);
   margin-right: 20px;
-  
- 
-  
   background-repeat: no-repeat;
   
 }
