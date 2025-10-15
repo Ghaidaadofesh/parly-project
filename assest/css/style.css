@@ -201,6 +201,8 @@ Editor’s-Pick svg{
 
 /* end Editor’s-Pick*/
 
+/* start banner*/
+
 .banner{
   padding: 50px 0;
 }
@@ -210,3 +212,27 @@ Editor’s-Pick svg{
 .padding-left-25{
   padding-left: 25px;
 }
+.sub-left-banner{
+  position: relative;
+}
+.abs-right{
+  
+  position: absolute;
+  top: 0;
+  right: 0;
+  text-align: right;
+   font-size: xx-large;
+}
+.abs-left{
+  
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: left;
+   font-size: xx-large;
+}
+.right.banner img{
+  width: 100%;
+}
+
+/* end banner*/
