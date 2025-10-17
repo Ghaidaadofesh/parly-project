@@ -108,7 +108,7 @@ border-radius: 0px;
 .news form {
      flex: 1 0 50%;
 }
-input,button{
+inp.ut,but.ton{
     background: none;
     border-top: none;
     border-right: none;
@@ -293,3 +293,88 @@ footer h4{
 
 }
 /* end footer*/
+
+.shop-hero,.login-hero,.register-hero{
+  background-color: #EAF1F9;
+  padding: 150px 0;
+  
+  
+
+}
+.shop{
+  padding: 50px 0;
+}
+
+.shop .card{
+    padding: 0;
+     flex-grow: 1;
+  flex-basis: 300px;
+  flex-shrink: 0;
+;
+border: none;
+outline: none;
+border-radius: 0px;
+ 
+}
+.shop .card a:hover  {
+   color: #CA7101; 
+   
+}
+.shop .card a{
+    transition: all 0.6s;
+}
+.shop svg:hover path{
+fill: #CA7101 ;
+}
+.shop svg{
+  transition: all 0.6s;
+}
+
+.login{
+  padding: 70px 0;
+   color:#9B9B9C;
+}
+.login-hero h2 .register-hero h2{
+  font-weight: bold;
+  
+}
+.login .btn , .Register .btn {
+  width: 120px;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 20px;
+  border:#CA7101;
+  background-color: #CA7101;
+  color: white;
+}
+.btn:hover{
+  background-color: #000;
+}
+.Register .btn:hover{
+  background-color: #000;
+}
+.login a,.Register a {
+  color:#9B9B9C;
+}
+.login input,.Register input{
+  border: #9B9B9C 1px solid;
+}
+.login h4,.Register h4{
+  color: #000;
+}
+
+.Register{
+  padding: 70px 0;
+  color:#9B9B9C;
+}
+
+.Register .btn {
+  width: 120px;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 20px;
+  border:#CA7101;
+  background-color: #CA7101;
+  color: white;
+}
+
