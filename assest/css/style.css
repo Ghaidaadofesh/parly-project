@@ -294,12 +294,9 @@ footer h4{
 }
 /* end footer*/
 
-.shop-hero,.login-hero,.register-hero{
+.shop-hero,.login-hero,.register-hero ,.details-hero{
   background-color: #EAF1F9;
   padding: 150px 0;
-  
-  
-
 }
 .shop{
   padding: 50px 0;
@@ -334,7 +331,7 @@ fill: #CA7101 ;
   padding: 70px 0;
    color:#9B9B9C;
 }
-.login-hero h2 .register-hero h2{
+.login-hero h2 .register-hero h2,.details-hero h2{
   font-weight: bold;
   
 }
@@ -377,4 +374,145 @@ fill: #CA7101 ;
   background-color: #CA7101;
   color: white;
 }
+.style{
+  padding: 70px 0;
+}
+.sub{
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    padding: 0 7px;
+    border: 0;
+    background-color: #D4E4F1;
+}
+.add{
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    padding: 0 5px;
+    border: 0;
+    background-color: #D4E4F1;
+}
+.quantity input{
+  width: 50px;
+  border: none;
+  outline: none;
+  background-color:#eaf1f9;
+  text-align: center;
+}
+.style .btn {
+  width: 120px;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 20px;
+  border:#CA7101;
+    background-color:#eaf1f9;
+  color: black;
+}
+.style .btn:hover{
+  background-color: #CA7101;
+  color: white;
+}
+.style a:hover{
+  color: #CA7101;
+  
+}
+.style p{
+ color: #6C7074;
+}
+.style-right{
+  padding-left: 20px;
+}
+.prime-color{
+  color: #CA7101;
+}
+.Related-Products{
+  padding: 70px 0;
+}
 
+.Related-Products .card{
+
+    padding: 0;
+     flex-grow: 1;
+  flex-basis: 300px;
+  flex-shrink: 0;
+;
+border: none;
+outline: none;
+border-radius: 0px;
+ 
+}
+.Related-Products .card a:hover  {
+   color: #CA7101; 
+   
+}
+.Related-Products .card a{
+    transition: all 0.6s;
+}
+.Related-Products svg:hover path{
+fill: #CA7101 ;
+}
+.Related-Products svg{
+  transition: all 0.6s;
+}
+.Related-Products h4{
+
+  padding-bottom: 30px;
+  font-size:xx-large ;
+}
+
+.info .info-left  ul,.info .info-right  ul{
+  padding-left: 0px;
+  color: #6C7074;
+}
+.Reviews img{
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+}
+.Reviews textarea{
+  margin: 20px 0;
+  width: 100%;
+  height: 200px;
+  outline: none;
+  border:  #a7adb3 1px solid;
+}
+.Reviews input{
+  outline: none;
+  border:  #a7adb3 1px solid;
+  width: 90%;
+  margin-right: 10px;
+
+}
+.Reviews .btn {
+  width: 120px;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 20px;
+  border:#CA7101;
+    background-color:#CA7101;
+  color:white;
+}
+.Reviews .btn:hover  {
+   background-color: black; 
+   
+}
+.nav-pills {
+  --bs-nav-pills-border-radius: 0; /* أو ممكن تغيريها لشي دائري */
+  --bs-nav-pills-link-active-color: #fff; /* لون النص لما التاب مفعّل */
+  --bs-nav-pills-link-active-bg: #d17500; /* اللون البرتقالي للتاب المفعّل */
+}
+
+.nav-pills .nav-link {
+  background-color: #eaf1fa; /* الخلفية الفاتحة */
+  color: #000; /* لون النص */
+  font-weight: bold;
+  border-radius: 0;
+}
+
+.nav-pills .nav-link:hover {
+  background-color: #f5d6a1; /* لون عند المرور */
+}
+
+.nav-pills .nav-link.active {
+  background-color: #d17500 !important; /* اللون البرتقالي */
+  color: #fff !important; /* لون النص الأبيض */
+}
