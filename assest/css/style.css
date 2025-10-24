@@ -294,7 +294,7 @@ footer h4{
 }
 /* end footer*/
 
-.shop-hero,.login-hero,.register-hero ,.details-hero, .MyAccount-hero{
+.shop-hero,.login-hero,.register-hero ,.details-hero, .cart-hero{
   background-color: #EAF1F9;
   padding: 150px 0;
 }
@@ -620,3 +620,121 @@ fill: #CA7101 ;
    background-color: black; 
    
 }
+
+/* start cart*/
+.cart{
+  padding: 70px 0;
+}
+
+.cart-table {
+  width: 100%;
+  
+}
+
+.cart-table th {
+  text-align: left;
+  padding: 15px 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.cart-table td {
+  padding: 15px 10px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.cart-table img {
+  width: 100px;
+  border-radius: 4px;
+}
+
+.quantity {
+ 
+}
+
+.quantity button {
+  background-color: #e8f0fa;
+  border: none;
+  width: 28px;
+  height: 28px;
+  border-radius: 15px;
+  font-size: 16px;
+  color: #333;
+}
+
+.quantity span {
+  font-size: 16px;
+  width: 20px;
+ 
+}
+
+.old-price {
+  text-decoration: line-through;
+  color: #aaa;
+  margin-right: 6px;
+}
+
+.new-price {
+  color: #d88400;
+  font-weight: 600;
+}
+
+.remove {
+  font-size: 20px;
+  color: #444;
+}
+
+.cart-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 25px;
+}
+
+.cart-buttons button {
+  border: 2px solid #000;
+  border-radius: 30px;
+  padding: 12px 28px;
+  font-weight: 600;
+  transition: all 0.6s;
+}
+
+.cart-buttons .continue {
+  background-color:#000;
+  color: #fff;
+  border: none;
+}
+
+.cart-buttons .continue:hover {
+  background-color:#CA7101;
+}
+
+ .clear:hover ,
+ .update:hover  {
+  background-color: #000;
+  color: #fff;
+}
+
+.total{
+  gap:250px ;
+}
+.subtotal{
+  gap:220px ;
+}
+
+.gg{
+  padding: 70px 0;
+}
+
+.gg .btn{
+border-radius: 20px;
+margin-top: 20px;
+}
+
+.gg .btn:hover{
+background-color: #CA7101;
+border: #CA7101;
+transition: all 0.6s;
+}
+
+/* end cart*/
+

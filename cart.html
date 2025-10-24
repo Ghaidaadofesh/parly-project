@@ -1,5 +1,4 @@
-<html lang="en">
-  <head>
+<head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Bootstrap demo</title>
@@ -98,69 +97,162 @@
       </div>
     </div>
 
-    <section class="register-hero text-center">
-        <h2>Register</h2>
+    <section class="cart-hero text-center">
+        <h2>Shopping Cart</h2>
         <div class="">
-            <a href="index.html">home </a>/ Register
+            <a href="index.html">home </a>/ Shopping Cart
         </div>
 
 
     </section>
 
-    <section class="Register">
+    <section class="cart">
         <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-6">
-                    <div class="login-reg ">
-                        <h4>Login to Your Account</h4>
-                            <p>Already have an account? <a href="login.html">Log in instead!</a></p>
-                        <form action="#" class="d-flex flex-column gap-4">
-                            <div class="login-form d-flex flex-column gap-2">
-                                <label >First Name</label>
-                                <input type="text">
-                            </div>
-                            <div class="login-form d-flex flex-column gap-2">
-                                <label >Last Name</label>
-                                <input type="text">
-                            </div>
-                            <div class="login-form d-flex flex-column gap-2">
-                                <label >Email Address *</label>
-                                <input type="text">
-                            </div>
-                            <div class="login-form d-flex flex-column gap-2">
-                                <label >Username *</label>
-                                <input type="text">
-                            </div>
-                              <div class="login-form d-flex flex-column gap-2">
-                                <label >Password</label>
-                                <input type="Password">
-                            </div>
-                            <div class="login-form d-flex flex-column gap-2">
-                                <label >Confirm Password</label>
-                                <input type="Password">
-                            </div>
-                            <div class="login-form">
-                                <input type="checkbox">
-                                <label> Receive Offers From Our Partners</label>
-                            </div>
-                            <div class="login-form">
-                                <input type="checkbox">
-                                <label>Sign Up For Our Newsletter<br>Subscribe To Our Newsletters Now And Stay Up-To-Date With New Collections, The Latest Lookbooks And Exclusive Offers.
-</label>
-                            </div>
-                            <div class="login-form">
-                                <button class="btn">Register</button>
-                            </div>
-                            
-                        </form>
-                    </div>
-                </div>
-            </div>
+            <table class="cart-table">
+      <thead>
+        <tr>
+          <th>Image</th>
+          <th>Product Name</th>
+          <th>Quantity</th>
+          <th>Total Price</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><img src="./assest/img/products/product-12.jpg" alt="dress"></td>
+          <td>Lucida Sleveless Dress</td>
+          <td class="quantity">
+            <button>-</button>
+            <span>1</span>
+            <button>+</button>
+          </td>
+          <td><span class="old-price">$195</span> <span class="new-price">$100</span></td>
+          <td><span class="remove">×</span></td>
+        </tr>
+
+        <tr>
+          <td><img src="./assest/img/products/product-12.jpg" alt="dress"></td>
+          <td>Lucida Sleveless Dress</td>
+          <td class="quantity">
+            <button>-</button>
+            <span>1</span>
+            <button>+</button>
+          </td>
+          <td><span class="old-price">$195</span> <span class="new-price">$100</span></td>
+          <td><span class="remove">×</span></td>
+        </tr>
+
+        <tr>
+          <td><img src="./assest/img/products/product-12.jpg" alt="dress"></td>
+          <td>Lucida Sleveless Dress</td>
+          <td class="quantity">
+            <button>-</button>
+            <span>1</span>
+            <button>+</button>
+          </td>
+          <td><span class="old-price">$195</span> <span class="new-price">$100</span></td>
+          <td><span class="remove">×</span></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="cart-buttons btn">
+      <button class="continue">Continue Shopping</button>
+      <div class="right-buttons">
+        <button class="clear">Clear Cart</button>
+        <button class="update">Update Cart</button>
+      </div>
+    </div>
         </div>
     </section>
 
+    <section class="gg">
+        <div class="container">
 
-       <footer>
+            <div class="row g-4">
+
+    <!-- Calculate Shipping -->
+    <div class="col-md-4">
+      <h5 class="fw-bold mb-2">Calculate Shipping</h5>
+      <p class="small text-muted mb-3">Estimate your shipping fee *</p>
+
+      <select class="form-select mb-3">
+        <option>Select a country…</option>
+        <option></option>
+        <option></option>
+        <option></option>
+        <option></option>
+        <option></option>
+        <option></option>
+        <option></option>
+        <option></option>
+        <option></option>
+        <option></option>
+      </select>
+
+      <select class="form-select mb-3">
+        <option>Select an option...</option>
+      </select>
+
+      <input type="text" class="form-control mb-3" placeholder="Postcode/zip">
+
+      <button class="btn btn-dark w-100 ">Update totals</button>
+    </div>
+
+    <!-- Coupon Code -->
+    <div class="col-md-4">
+      <h5 class="fw-bold mb-2">Coupon Code</h5>
+      <p class="small text-muted mb-3">Enter your coupon code if you have one.</p>
+
+      <input type="text" class="form-control mb-3" placeholder="Enter your coupon code..">
+
+      <button class="btn btn-dark w-100">Apply Coupon</button>
+    </div>
+
+    <!-- Cart Totals -->
+    <div class="col-md-4">
+      <h5 class="fw-bold mb-3">Cart totals</h5>
+
+      <div class="d-flex subtotal ">
+        <span>Subtotal</span>
+        <span>£600.00</span>
+      </div>
+      <hr>
+      <div class="d-flex justify-content-between ">
+      <p class="small fw-bold mt-3 mb-2">Shipping</p>
+      <div class=" d-flex flex-column ">
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="shipping" id="flat">
+        <label class="form-check-label small" for="flat">Flat Rate</label>
+      </div>
+      
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="shipping" id="free">
+        <label class="form-check-label small" for="free">Free Shipping</label>
+      </div>
+      <div class="form-check mb-3">
+        <input class="form-check-input" type="radio" name="shipping" id="local">
+        <label class="form-check-label small" for="local">Local Pickup</label>
+      </div>
+      </div>
+      </div>
+      <hr>
+
+      <div class="d-flex total ">
+        <span>Total</span>
+        <span >£600.00</span>
+      </div>
+      
+
+      <button class="btn btn-dark w-100">Proceed To Checkout</button>
+    </div>
+
+  </div>
+        </div>
+    </section>
+
+      <footer>
       <div class="container">
         <div class="row">
           <div class="col-3">
