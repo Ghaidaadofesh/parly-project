@@ -294,7 +294,7 @@ footer h4{
 }
 /* end footer*/
 
-.shop-hero,.login-hero,.register-hero ,.details-hero{
+.shop-hero,.login-hero,.register-hero ,.details-hero, .MyAccount-hero{
   background-color: #EAF1F9;
   padding: 150px 0;
 }
@@ -515,4 +515,108 @@ fill: #CA7101 ;
 .nav-pills .nav-link.active {
   background-color: #d17500 !important; /* اللون البرتقالي */
   color: #fff !important; /* لون النص الأبيض */
+}
+.account{
+  padding: 70px 0;
+}
+
+
+.orders-section h2 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.orders-table {
+  width: 100%;
+
+}
+
+.orders-table th,
+.orders-table td {
+  border: 1px solid #ddd;
+  text-align: left;
+  padding: 12px;
+}
+
+.orders-table th {
+  background-color: #f9f9f9;
+  font-weight: 600;
+}
+
+.orders-table tr:hover {
+  background-color: #f5f5f5;
+}
+
+
+.view-link:hover {
+   color: #d17500;
+}
+
+
+
+.downloads-section {
+  margin: 30px;
+}
+
+.downloads-section h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.downloads-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+}
+
+.downloads-table th,
+.downloads-table td {
+  border: 1px solid #ddd;
+  text-align: left;
+  padding: 12px;
+}
+
+.downloads-table th {
+  background-color: #f9f9f9;
+  font-weight: 600;
+}
+
+.downloads-table tr:hover {
+  background-color: #f5f5f5;
+}
+
+
+.download-link:hover {
+  color: #d17500;
+}
+
+
+.address-card .btn {
+  width: 150px;
+  padding: 10px;
+  margin-top: 10px;
+  
+  border:#CA7101;
+    background-color:#CA7101;
+  color:white;
+}
+.address-card .btn:hover  {
+   background-color: black; 
+   
+}
+
+
+
+.form-account .btn {
+  width: 150px;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 20px;
+  border:#CA7101;
+    background-color:#CA7101;
+  color:white;
+}
+.form-account .btn:hover  {
+   background-color: black; 
+   
 }
