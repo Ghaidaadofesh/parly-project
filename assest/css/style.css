@@ -28,10 +28,87 @@ justify-content: space-between;
 fill: black;
 }
 
-@media screen and (max-width: px) {
- .hero-img img {
-  width: 100%;
+@media (max-width: 992px) {
+  .padding {
+    padding-top: 120px;
+  }
+
+  .main-title {
+    font-size: 45px;
+  }
+
+  .sub-title {
+    font-size: 24px;
+  }
+
+  .hero-img img {
+    width: 90%;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .hero-content {
+    text-align: center;
+  }
+
+  .hero-icon {
+    justify-content: center;
+  }
 }
+
+/* ====== للشاشات الصغيرة (الموبايل 768px وأقل) ====== */
+@media (max-width: 768px) {
+  .padding {
+    padding-top: 80px;
+  }
+
+  .main-title {
+    font-size: 35px;
+    line-height: 1.3;
+  }
+
+  .sub-title {
+    font-size: 22px;
+  }
+
+  .hero {
+    text-align: center;
+  }
+
+  .hero-img img {
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  .hero-icon a svg {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+/* ====== للشاشات الصغيرة جدًا (الموبايلات القديمة 480px وأقل) ====== */
+@media (max-width: 480px) {
+  .padding {
+    padding-top: 60px;
+  }
+
+  .main-title {
+    font-size: 28px;
+  }
+
+  .sub-title {
+    font-size: 18px;
+  }
+
+  .hero-icon {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .hero-icon a svg {
+    width: 28px;
+    height: 28px;
+  }
 }
 
 /* start brands */
@@ -120,24 +197,103 @@ inp.ut,but.ton{
    outline: #CA7101;
 }
 
-/* end news */
+.newsletter {
+  padding: 50px 0;
+}
+.newsletter-box {
+  background: url("./../img/newsletter.jpg") no-repeat center/cover;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 60px 40px;
+  position: relative;
+}
 
+.newsletter-content {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.text h2 {
+  padding-left: 120px;
+  color: #000;
+  margin: 0;
+  line-height: 1.3;
+}
+
+.form {
+  padding-right: 10px;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #000;
+  max-width: 600px;
+}
+
+.form input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 10px;
+  color: #444;
+}
+
+
+.form button {
+  border: none;
+  background: transparent;
+  color: #000;
+}
+
+.form button:hover {
+  color:#CA7101;
+}
+
+/* ريسبونسف */
+@media (max-width: 768px) {
+  .newsletter-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  .form {
+    max-width: 100%;
+  }
+  .text h2 {
+    padding-left: 0px;
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .form input{
+    width: 50%;
+  }
+
+.form button {
+  width: 50%;
+}
+}
 /* start hot */
 .hot-winner{
   padding: 50px 0;
 }
 
-
 .img1{
   background-image: url(./../img/banner-7.jpg);
   margin-top: 35px;
     background-repeat: no-repeat;
-    width: 100%;
+    background-size: cover;
+    
 }
 .img2{
   background-image: url(./../img/banner-8.webp);
   background-repeat: no-repeat;
   width: 100%;
+  background-size: cover;
 }
 .hot-content{
   padding: 70px 0;
@@ -146,8 +302,74 @@ inp.ut,but.ton{
   padding: 90px 0;
 }
 
-/* end hot */
 
+@media (max-width: 992px) {
+  .hot-content,
+  .left-hot-content {
+    padding: 50px 0;
+    text-align: center;
+  }
+
+  .hot-winner .col-5,
+  .hot-winner .col-7 {
+    width: 100%;
+  }
+
+  .img1,
+  .img2 {
+    margin-top: 20px;
+    background-position: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .hot-content h2,
+  .left-hot-content h2 {
+    font-size: 20px;
+  }
+
+  .hot-content h4,
+  .left-hot-content h4 {
+    font-size: 16px;
+  }
+
+  .hot-content span,
+  .left-hot-content span {
+    font-size: 14px;
+  }
+
+  .hot-content,
+  .left-hot-content {
+    padding: 40px 0;
+    text-align: center;
+  }
+
+  .hot-winner {
+    padding: 30px 0;
+  }
+
+  .img1,
+  .img2 {
+    background-size: cover;
+    height: 300px;
+  }
+
+  .img1 .row,
+  .img2 .row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hot-content a,
+  .left-hot-content a {
+    font-size: 14px;
+  }
+}
+/* end hot */
+hr{
+  color: #000;
+  width: 60%;
+}
 /* start Editor’s-Pick*/
 .Editor’s-Pick {
     padding: 50px 0;
@@ -276,6 +498,19 @@ border: none;
 outline: none;
 border-radius: 0px;
  
+}
+.heder-arrivel{
+  padding-bottom: 30px;
+  align-items: center;
+}
+.best{
+  background-color: #D4E4F1;
+  padding: 0 20px;
+ 
+}
+.hour{
+  background-color:#F0D4D4;
+  padding: 0 20px;
 }
 /* end new arrivel*/
 
