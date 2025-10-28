@@ -20,6 +20,12 @@ justify-content: space-between;
     margin-bottom: 20px;
 }
 
+nav{
+  font-size: xx-large;
+}
+nav a:hover a{
+  color: #CA7101;
+}
 .padding{
     padding-top: 200px;
 }
@@ -529,12 +535,12 @@ footer h4{
 }
 
 @media (max-width: 430px) {
-  .links {
-    flex: 0 0 100%;
-    max-width: 100%;
-    margin-top: 20px;
-    text-align: center; /* يخلي النصوص وسط */
+   .links {
+    flex-direction: column !important;
+    gap: 10px;
   }
+
+  
 }
 /* end footer*/
 
@@ -930,9 +936,6 @@ fill: #CA7101 ;
   border-radius: 4px;
 }
 
-.quantity {
- 
-}
 
 .quantity button {
   background-color: #e8f0fa;
